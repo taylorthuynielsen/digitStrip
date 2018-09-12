@@ -29,8 +29,24 @@ public class DigitStrip
 		{
 			Scanner userInput = new Scanner(System.in); 
 			System.out.println("Enter a number of any size.");
-			int number = userInput.nextInt(); 
+			int number = userInput.nextInt();
 			boolean numberEqualsZero = true;
-			
+			int counter = 0;
+			do
+				{
+					if (number/10>0)
+						{
+							int strippedDigit = number%10;
+							number = number/10; 
+							counter++;
+					
+						}
+					else if(number/10==0)
+						{
+							numberEqualsZero=false;
+						}
+				}
+			while(numberEqualsZero);
+			System.out.println(counter);
 		}
 	}
