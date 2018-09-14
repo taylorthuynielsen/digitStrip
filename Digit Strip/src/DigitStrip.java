@@ -92,19 +92,19 @@ public class DigitStrip
 			int rounded = 0;
 			if (sum>=10)
 				{
-			if (sumLastDigit<5)
-				{
-					rounded = sum - sumLastDigit; 
-				}
+					if (sumLastDigit<5)
+						{
+							rounded = sum - sumLastDigit; 
+						}
 			
-			else if (sumLastDigit>=5)
-				{
-					rounded = sum + sumLastDigit;
-				}
-			else 
-				{
-					rounded = rounded; 
-				}
+					else if (sumLastDigit>=5)
+						{
+							rounded = sum + sumLastDigit;
+						}
+					else 
+						{
+							rounded = rounded; 
+						}
 			
 			
 				}
