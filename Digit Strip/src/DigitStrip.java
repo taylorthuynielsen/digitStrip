@@ -99,7 +99,7 @@ public class DigitStrip
 			
 					else if (sumLastDigit>=5)
 						{
-							rounded = sum + sumLastDigit;
+							rounded = sum + (10-sumLastDigit);
 						}
 					else 
 						{
